@@ -13,17 +13,18 @@
 
 <body class="">
     <header class="w-full bg-gradient-to-t from-[#EFEBE3] to-[#FFFFFF]">
-        <section class="flex justify-between items-center px-32">
+        <section class="flex justify-between items-center px-8 lg:px-32">
             <img src="c2-assets/logo-header.png" alt="">
+
             <div>
-                <ul class="flex gap-4">
+                <ul class="lg:flex lg:gap-4 hidden">
                     <li class="hover:bg-gray-200">Product</li>
                     <li class="hover:bg-gray-200">Services</li>
                     <li class="hover:bg-gray-200">contact us</li>
                 </ul>
             </div>
             <div>
-                <ul class="flex gap-4">
+                <ul class="lg:flex lg:gap-4 hidden">
                     <li>
                         <button class="p-2 rounded-full hover:bg-gray-200">
                             <svg xmlns="http://www.w3.org/2000/svg" class="w-6 h-6 text-gray-600" fill="none"
@@ -50,8 +51,12 @@
                     </li>
                 </ul>
             </div>
+            <i
+                class="fa-solid fa-ellipsis-vertical text-4xl lg:hidden hover:text-gray-500 hover:rotate-90 transition-transform duration-300"></i>
+
         </section>
-        <section class="px-64">
+
+        <section class="lg:px-64 px-8">
             <div class="text-center pt-20">
                 <h1 class="text-4xl	 font-bold">
                     Freshness
@@ -69,9 +74,9 @@
         </section>
     </header>
     <main class="relative">
-        <section class="p-32">
+        <section class="lg:p-32 p-8">
             <h1 class="text-4xl	 font-bold pb-8 text-green-600">Services</h1>
-            <div class="flex gap-8">
+            <div class="flex gap-8 flex-col lg:flex-row">
                 <div class="bg-[#EFEBE3] rounded-lg p-6 text-center place-items-center">
                     <img class="p-2 rounded-full bg-white" src="c2-assets/service.png" alt="">
                     <h1 class="font-bold">24/7 Services </h1>
@@ -93,11 +98,11 @@
             </div>
         </section>
 
-        <div class="px-32 py-16 bg-[#EFEBE3]">
+        <div class="px-8 lg:px-32 py-16 bg-[#EFEBE3]">
             <h1 class="font-bold text-4xl pb-8 text-green-600">Popular Products</h1>
-            <section class="bg-[#EFEBE3] grid grid-cols-5 gap-4">
+            <section class="bg-[#EFEBE3] grid lg:grid-cols-5 grid-cols-2 gap-4">
                 <div
-                    class="relative col-span-2 row-span-3 bg-gradient-to-br from-[#50D842] to-[#E3F9D7] rounded-lg px-6 pt-6">
+                    class="relative col-span-2 row-span-2 lg:row-span-3 bg-gradient-to-br from-[#50D842] to-[#E3F9D7] rounded-lg px-6 pt-6">
                     <h1 class="font-bold text-xl">30% off</h1>
                     <p class="text-gray-600 py-3">Discover a world of treats, toys, and essentials handpicked for </p>
                     <button class="border-2 rounded-md px-3 py-1 bg-white font-medium">Buy Now</button>
@@ -206,10 +211,10 @@
             </section>
         </div>
 
-        <section class="px-32 pt-16 pb-64">
+        <section class="lg:px-32 px-8 pt-16 pb-96 lg:pb-64">
             <h1 class="font-bold text-4xl pb-8 text-green-600">Arrival & Offers</h1>
-            <div class="grid grid-cols-7 gap-4">
-                <div class="text-white bg-green-700 flex justify-between px-4 pt-2 rounded-lg col-span-4">
+            <div class="grid lg:grid-cols-7 gap-4">
+                <div class="text-white bg-green-700 flex justify-between px-4 pt-2 rounded-lg lg:col-span-4">
                     <div class="">
                         <img src="c2-assets/dawat-logo.png" alt="">
                         <button class="px-4 py-1 text-2xl bg-green-400 rounded-md my-6">Cook Exotic Dishes</button>
@@ -219,7 +224,7 @@
                     </div>
                     <img src="c2-assets/dawat-mock-up.png" alt="">
                 </div>
-                <div class="text-white bg-blue-900 flex justify-between px-4 pt-2 rounded-lg col-span-3">
+                <div class="text-white bg-blue-900 flex justify-between px-4 pt-2 rounded-lg lg:col-span-3">
                     <div class="">
                         <img src="c2-assets/india-gate-logo.png" alt="">
                         <button class="px-4 py-1 text-2xl bg-blue-700 rounded-md my-6">World’s No.1 Rice</button>
@@ -232,7 +237,7 @@
             </div>
         </section>
 
-        <section class="absolute -bottom-64 flex justify-between items-center mx-32 my-16 px-8 py-4 rounded-lg bg-[#EFEBE3] min-w-[1120px]">
+        <section class="absolute -bottom-64 lg:flex justify-between items-center lg:mx-32 mx-8 my-16 px-8 py-4 rounded-lg bg-[#EFEBE3] lg:min-w-[1120px]">
             <img src="c2-assets/vegetable-busket.png" alt="">
             <div>
                 <h1 class="font-bold text-3xl">Get Grocery News!</h1>
@@ -249,7 +254,7 @@
     <footer class="bg-green-600 h-96 pt-64">
         
 
-        <section class="text-white flex justify-between px-32">
+        <section class="text-white flex gap-4 justify-between px-8 lg:px-32">
             <div class="w-1/3">
                 <img src="c2-assets/logo-footer.png" alt="">
                 <p>Discover a world of treats, toys, and essentials handpicked for your furry friends</p>
@@ -257,7 +262,7 @@
             <div class="w-1/3">
                 <ul>
                     <li>Product</li>
-                    <li>Services</li>
+                    <li class="py-4">Services</li>
                     <li>Contact us</li>
                 </ul>
             </div>
